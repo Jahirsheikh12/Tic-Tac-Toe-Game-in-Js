@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    /* background-color: white; */
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+.inner-container {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3 ,10vw);
+    
+}
+
+.boxes {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text-box {
+    font-size: 100px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.boxes:hover {
+    background-color: rgb(211, 248, 248);
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.info {
+    margin-top: -50px;
+    margin-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.turn-info {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    animation: blink 1.5s ease infinite;
+    color: blue;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+}
+
+#reset {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(87, 87, 253, 0.799);
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    
+}
+
+/* #reset:hover {
+    transition: all 1s linear;
+    transform: translateY(-15px);
+} */
+
+.reset-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
